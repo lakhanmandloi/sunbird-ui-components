@@ -72,7 +72,7 @@ export class ModalComponent implements OnInit, OnDestroy {
 
     // close modal on background click
     this.element.addEventListener('click', (e: any) => {
-      if (e.target.classList.contains('sbmodalWrapper')) {
+      if (e.target.classList.contains('sbmodal--isClosable')) {
         modal.close();
       }
     });

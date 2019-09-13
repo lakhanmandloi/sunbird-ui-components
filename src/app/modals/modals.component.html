@@ -14,7 +14,7 @@
       Show Normal Modal
     </button>
 
-    <sb-modal *ngIf="shownormalmodal" [isClosable]="false" [size]="'md'" [theme]="'primary'" [customClass]="'mycustomclass'" (dismissed)="shownormalmodal = !shownormalmodal" id="modal-1">
+    <sb-modal *ngIf="shownormalmodal" [isClosable]="true" [size]="'md'" [theme]="'primary'" [customClass]="'mycustomclass'" (dismissed)="shownormalmodal = !shownormalmodal" id="modal-1">
 
       <sb-modal-header [hideCloseButton]="false">
         Modal Heading
