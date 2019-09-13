@@ -314,6 +314,12 @@ $sb-modal-corner-radius: 8px;
         flex: inherit;
       }
     }
+    button {
+      background: none;
+      border: 0;
+      outline: none;
+      color: var(--white);
+    }
     .sbicon {
       width:16px;
       height:16px;

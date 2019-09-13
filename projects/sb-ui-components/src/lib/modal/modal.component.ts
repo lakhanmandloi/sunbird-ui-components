@@ -90,13 +90,13 @@ export class ModalComponent implements OnInit, OnDestroy {
   // open modal
   open(): void {
     this.element.style.display = 'block';
-    document.body.classList.add('sbmodalWrapper-open');
+    document.body.classList.add('sbmodal--open');
   }
 
   // close modal
   close(): void {
     this.element.style.display = 'none';
-    document.body.classList.remove('sbmodalWrapper-open');
+    document.body.classList.remove('sbmodal--open');
   }
 
 }
@@ -117,8 +117,9 @@ export class ModalComponent implements OnInit, OnDestroy {
       *ngIf="!hideCloseButton"
       title="Close"
       class="i-link sbbtn-close">
+      X
         <svg class="sbicon sbicon--close sbicon--xs sbicon--white">
-          <use xlink:href="assets/images/sprite.svg#close"></use>
+          <use xlink:href="../assets/images/logo.png"></use>
         </svg>
     </button>
   </div>`,
